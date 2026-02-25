@@ -1,0 +1,19 @@
+package wipro;
+
+public class ques4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int[] arr= {12, 35, 1, 10, 34, 1};
+int largest=0;
+for(int i=0; i<=arr.length-1;i++) {
+	for(int j=1; j<=arr.length-1;j++) {
+		if(arr[j]>largest) {
+  		  largest=arr[j-1];
+  	  }
+	}
+}
+System.out.println(largest);
+	}
+
+}

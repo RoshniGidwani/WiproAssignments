@@ -1,0 +1,20 @@
+package wipro;
+
+public class ques2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr= {1,2,4,7,9,10};
+		int even=0;
+		for(int i =0; i<=arr.length-1; i++) {
+			if(arr[i]%2==0) {
+				even++;
+				
+			}
+			
+		}
+		System.out.println(even);
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package wipro;
+import java.util.*;
+
+
+public class unique_id {
+
+	 public static void main(String[] args) {
+
+	        Set<Integer> patientIds = new HashSet<>();
+
+	        // Adding patients (no printing here)
+	        patientIds.add(101);
+	        patientIds.add(102);
+	        patientIds.add(101); // duplicate
+	        patientIds.add(103);
+
+	        // Print after all additions
+	        System.out.println("Registered Patient IDs:");
+	        for (int id : patientIds) {
+	            System.out.println(id);
+	        }
+	    }
+	}
+
+
+

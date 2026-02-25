@@ -1,0 +1,28 @@
+package wipro;
+
+import java.util.*;
+import java.util.Map;
+ 
+public class MapExample {
+public static void main(String[] args)
+{
+Map<Integer, String>emp = new HashMap<>();
+//HashMap<Integer, String>Employee1= new HashMap<>();
+ 
+		emp.put(101, " Vinay ");
+		emp.put(102, " Sonali ");
+		emp.put(103, " Renu ");
+		
+		
+		
+		System.out.println(emp);
+		System.out.println(emp.containsKey(102));
+		System.out.println(emp);
+		System.out.println(emp);
+		System.out.println(emp);
+ 
+	}
+ 
+}
+ 
+ 

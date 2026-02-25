@@ -1,0 +1,39 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class resume_upload{
+
+    public static void main(String[] args) {
+
+        // Set path to chromedriver if not in system PATH
+        // System.setProperty("webdriver.chrome.driver", "C:\\path\\to\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        try {
+            driver.get("https://the-internet.herokuapp.com/upload");
+            driver.manage().window().maximize();
+
+            // Absolute path to your file
+            String filePath ="C:\\Users\\roshn\\OneDrive\\Desktop\\Resume.pdf";
+
+            // Locate file input element
+            WebElement fileInput = driver.findElement(By.id("file-upload"));
+
+            // Upload file
+            fileInput.sendKeys(filePath);
+
+            // Click upload button
+            driver.findElement(By.id("file-submit")).click();
+
+            // Print confirmation text
+            String confirmation = driver.findElement(By.tagName("h3")).getText();
+            System.out.println("Upload Status: " + confirmation);
+
+        } finally {
+            driver.quit();
+        }
+    }
+}

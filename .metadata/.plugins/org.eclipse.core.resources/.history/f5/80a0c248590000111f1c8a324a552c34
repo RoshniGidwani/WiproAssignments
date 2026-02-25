@@ -1,0 +1,17 @@
+package wipro;
+
+public class ques1 {
+
+	public static void main(String[] args) {
+		int largest=0;
+		int[] arr= {20, 28,30,85};
+          for(int i=0; i<=arr.length; i++) {
+        	  
+        	  if(arr[i]>arr[i+1]) {
+        		  largest=arr[i];
+        	  }
+          }
+          System.out.println(largest);
+	}
+
+}

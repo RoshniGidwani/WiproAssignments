@@ -1,0 +1,17 @@
+package wipro;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set; 
+
+public class Hospital {
+    private int patientId;
+    private String name;
+    private int age;
+    static Map<Integer, HospitalSystem> patients = new HashMap<>();
+
+    public Hospital(int patientId, String name, int age) {
+        this.patientId = patientId;
+        this.name = name;
+        this.age = age;
+    }}

@@ -1,0 +1,35 @@
+package webdriver_selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class login_auto {
+
+    public static void main(String[] args) {
+
+        WebDriver driver = new ChromeDriver();
+
+        try {
+            driver.manage().window().maximize();
+            driver.get("https://www.saucedemo.com/");
+
+            WebElement username = driver.findElement(By.name("user-name"));
+            username.sendKeys("visual_user");
+
+            WebElement password = driver.findElement(By.id("password"));
+            password.sendKeys("secret_sauce");
+
+            WebElement loginBtn = driver.findElement(By.id("login-button"));
+            loginBtn.click();
+
+            Thread.sleep(5000);
+
+        } catch (Exception e) {
+            System.out.println("Exception: " + e.getMessage());
+        } finally {
+            driver.quit();
+        }
+    }
+}

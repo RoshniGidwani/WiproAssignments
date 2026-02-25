@@ -1,0 +1,67 @@
+package wipro;
+
+import java.util.*;
+
+public class unique_id {
+
+    public static void main(String[] args) {
+
+        Set<Integer> patientIds = new HashSet<>();
+
+        // Adding patient IDs
+        addPatient(patientIds, 101);
+        addPatient(patientIds, 101);
+        addPatient(patientIds, 102);
+        addPatient(patientIds, 103);
+
+        // Check existence
+        checkPatient(patientIds, 102);
+
+        // Count patients
+        System.out.println("Total patients: " + patientIds.size());
+
+        // List all patients
+        System.out.println("List of unique registered patients:");
+        for (int id : patientIds) {
+            System.out.println("Patient ID: " + id);
+        }
+
+        // Remove patient
+        removePatient(patientIds, 102);
+
+        // Clear system
+        patientIds.clear();
+        System.out.println("All patient records cleared.");
+    }
+
+    // Add patient
+    static void addPatient(Set<Integer> patientIds, int id) {
+        if (patientIds.contains(id)) {
+            System.out.println("ID " + id + " is already registered");
+        } else {
+            patientIds.add(id);
+            System.out.println("Patient with ID " + id + " added to the system");
+        }
+    }
+
+    // Check existence
+    static void checkPatient(Set<Integer> patientIds, int id) {
+        if (patientIds.contains(id)) {
+            System.out.println("Patient ID " + id + " exists in the system");
+        } else {
+            System.out.println("Patient ID " + id + " not found");
+        }
+    }
+
+    // Remove patient
+    static void removePatient(Set<Integer> patientIds, int id) {
+        if (patientIds.remove(id)) {
+            System.out.println("Patient ID " + id + " removed");
+        } else {
+            System.out.println("Patient ID " + id + " not found");
+        }
+    }
+}
+
+
+

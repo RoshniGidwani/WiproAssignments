@@ -1,0 +1,42 @@
+package stepdefinitions;
+
+import io.cucumber.java.en.Given;
+
+public class LoginSteps {
+	 @Given("User is on login page")
+	    public void user_on_login_page() {
+	        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+	        driver = new ChromeDriver();
+	        driver.manage().window().maximize();
+	        driver.get("https://www.saucedemo.com/");
+	        login = new LoginPage(driver);
+	    }
+
+	    @When("User enters username {string} and password {string}")
+	    public void user_enters_credentials(String user, String pass) {
+	        login.enterUsername(user);
+	        login.enterPassword(pass);
+	    }
+
+	    @And("User clicks login button")
+	    public void user_clicks_login() {
+	        login.clickLogin();
+	    }
+
+	    @Then("User should see the {string}")
+	    public void verify_login(String expected) {
+	        
+	        String title = driver.getTitle();
+	        
+	        if(title.contains(expected)) {
+	            Assert.assertTrue(true); // successfully landed on Products page
+	        } else {
+	            // if error message expected
+	            String msg = login.getErrorMessage();
+	            Assert.assertTrue(msg.contains(expected));
+	        }
+	        
+	        driver.quit();
+	    }
+	}
+

@@ -1,0 +1,53 @@
+package stepdefinitions;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+
+public class LoginSteps{
+WebDriver driver; 
+	
+	@Given("Launch the browser")
+	public void Setup() {
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+	}
+	
+	@When("I open the login page")
+	public void LoginPageOpen()  throws InterruptedException{
+		 Thread.sleep(2000);
+		driver.get("https://www.saucedemo.com");
+		
+	}
+	
+//	@And("I enter the valid username and password")
+//	public void ValidUserAndPassword() {
+//	
+//		driver.findElement(By.name("user-name")).sendKeys("standard_user");
+//		driver.findElement(By.name("password")).sendKeys("secret_sauce");
+//	}
+	
+	@And("I enter username {string} and password {string}")
+	public void ValidUserAndPassword(String username, String password) {
+
+	    driver.findElement(By.name("user-name")).sendKeys(username);
+	    driver.findElement(By.name("password")).sendKeys(password);
+	}
+	
+	
+	@And("I click on login button")
+	public void ClickLogin()  throws InterruptedException{ 
+		 Thread.sleep(2000);
+
+		driver.findElement(By.id("login-button")).click();
+		System.out.println("Logged in Successfully");
+		driver.quit();
+	}
+	
+	}
+

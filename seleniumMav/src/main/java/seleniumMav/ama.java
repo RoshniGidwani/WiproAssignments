@@ -1,0 +1,65 @@
+package seleniumMav;
+
+import org.openqa.selenium.By;
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.time.Duration;
+public class ama {
+
+	public static void main(String[] args) {
+		
+	
+		        WebDriver driver = new ChromeDriver();
+
+		        driver.manage().window().maximize();
+		 
+		        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		 
+		        driver.get("https://www.amazon.in");
+		 
+		        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("twotabsearchtextbox")));
+		 
+		        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("laptop");
+
+		        driver.findElement(By.id("nav-search-submit-button")).click();
+		 
+//		        wait.until(ExpectedConditions.elementToBeClickable(
+
+		        driver.findElement(By.id("a-autoid-3-announce"))
+
+		                .click();
+		 
+//		        String mainWindow = driver.getWindowHandle();
+//		 
+//		        for (String handle : driver.getWindowHandles()) {
+//
+//		            if (!handle.equals(mainWindow)) {
+//
+//		                driver.switchTo().window(handle);
+//
+//		                break;
+//
+//		            }
+//
+//		        }
+		 
+		        driver.findElement(By.id("nav-cart-count")).click();
+		 
+//		        driver.findElement(By.id("nav-cart")).click();
+		 
+		        driver.quit();
+
+		    }
+
+		}
+
+		 
+
+	

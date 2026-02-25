@@ -1,0 +1,39 @@
+package wipro;
+import java.util.*;
+
+public class WrapperBankLoan {
+
+	public static void main(String[] args) {
+		 Integer age = 28;
+	        Integer cibilScore = 750;
+		// TODO Auto-generated method stub
+
+
+		ArrayList<Double> income = new ArrayList();
+		
+		     income.add(45000.0);
+	        income.add(48000.0);
+	        income.add(50000.0);
+
+	        //(Unboxing)
+	        double totalIncome = 0;
+	        for (Double Income : income) {
+	            totalIncome += Income;
+	        }
+
+	        if (age < 21) {
+	            System.out.println("Loan Rejected: Age below 21");
+	        } else if (cibilScore < 700) {
+	            System.out.println("Loan Rejected: Low CIBIL Score");
+	        } else if (totalIncome < 40000) {
+	            System.out.println("Loan Rejected: Income too low");
+	        } else {
+	            System.out.println("Loan Approved");
+	        }
+
+	        System.out.println("Average Income: " + totalIncome);
+		
+
+	}
+
+}

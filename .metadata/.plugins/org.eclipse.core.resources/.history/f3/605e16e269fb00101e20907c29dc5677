@@ -1,0 +1,43 @@
+package wipro;
+import java.util.*;
+
+
+public class unique_id {
+
+	    public static void main(String[] args) {
+
+	  
+	        Set<Integer> patientIds = new HashSet();
+
+	     
+	        addPatient(patientIds, 101);
+	        addPatient(patientIds, 101); 
+	        addPatient(patientIds, 102);
+	        addPatient(patientIds, 103);
+
+	        System.out.println("List of unique registered patients:");
+	        for (int id : patientIds) {
+	            System.out.println("Patient ID: " + id);
+	        }
+
+	    }
+
+	    public static void addPatient(Set<Integer> patientIds, int id) {
+	        if (patientIds.contains(id)) {
+	            System.out.println("ID " + id + " is already registered");
+	        } else {
+	            patientIds.add(id);
+	            System.out.println("Patient with ID " + id + " added to the system");
+	        }
+	    }
+
+	    public static void viewPatients(Set<Integer> patientIds) {
+	        System.out.println("\nList of unique registered patients:");
+	        for (int id : patientIds) {
+	            System.out.println("Patient ID: " + id);
+	        }
+	    }
+	}
+
+
+
