@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\roshn\eclipse-workspace\wipro"/>
+			<item value="C:\Users\roshn\eclipse-workspace\maven\src\test\java\maven\LoginTest1.java"/>
+			<item value="C:\Users\roshn\eclipse-workspace\jenkins\src\jenkins\example.java"/>
 			<item value="C:\Users\roshn\eclipse-workspace\seleniumTestNG\src\test\java\seleniumTestNG\API_test.java"/>
 			<item value="C:\Users\roshn\eclipse-workspace\seleniumMav\src\main\java\seleniumMav"/>
 			<item value="C:\Users\roshn\eclipse-workspace\seleniumMav\src\main\java\seleniumMav\Login_insta.java"/>
@@ -49,11 +52,23 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="usecase"/>
+			<item value="testng"/>
+			<item value="slf4j"/>
+			<item value="com.test"/>
+			<item value="com.mav"/>
+			<item value="com.jenkins"/>
 			<item value="com.cucumber"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="UseCase1Testing"/>
+			<item value="SLF4j"/>
+			<item value="testNG"/>
+			<item value="eCommerce"/>
+			<item value="maven"/>
+			<item value="jenkins_Mav"/>
 			<item value="selCucumber"/>
 		</list>
 		<list key="projectNameTemplate">

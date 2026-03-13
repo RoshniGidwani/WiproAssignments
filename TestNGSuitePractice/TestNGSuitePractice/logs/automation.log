@@ -1,0 +1,31 @@
+2026-03-03 15:20:56 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\91909\OneDrive\Documents\Java\UseCase1Testing\testing.xml
+
+2026-03-03 15:21:00 INFO  tests.AllOneInTest - Test started: Login → Add to Cart → Checkout
+2026-03-03 15:21:00 INFO  tests.AllOneInTest - Performing login
+2026-03-03 15:21:01 INFO  tests.AllOneInTest - Adding item to cart
+2026-03-03 15:21:01 INFO  tests.AllOneInTest - Navigating to cart and checkout
+2026-03-03 15:21:01 INFO  tests.AllOneInTest - Entering checkout details
+2026-03-03 15:41:33 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\91909\OneDrive\Documents\Java\UseCase1Testing\testing.xml
+
+2026-03-03 15:41:37 INFO  tests.AllOneInTest - Test started: Login → Add to Cart → Checkout
+2026-03-03 15:41:37 INFO  tests.AllOneInTest - Performing login
+2026-03-03 15:41:37 INFO  tests.AllOneInTest - Adding item to cart
+2026-03-03 15:41:38 INFO  tests.AllOneInTest - Navigating to cart and checkout
+2026-03-03 15:41:38 INFO  tests.AllOneInTest - Entering checkout details
+2026-03-03 15:53:05 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\91909\OneDrive\Documents\Java\UseCase1Testing\testing.xml
+
+2026-03-03 15:53:09 INFO  tests.AllOneInTest - Test started: Login → Add to Cart → Checkout
+2026-03-03 15:53:09 INFO  tests.AllOneInTest - Performing login
+2026-03-03 15:53:09 INFO  tests.AllOneInTest - Adding item to cart
+2026-03-03 15:53:09 INFO  tests.AllOneInTest - Navigating to cart and checkout
+2026-03-03 15:53:10 INFO  tests.AllOneInTest - Entering checkout details
+2026-03-03 15:55:55 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\91909\OneDrive\Documents\Java\UseCase1Testing\testing.xml
+
+2026-03-03 15:55:59 INFO  tests.AllOneInTest - Test started: Login → Add to Cart → Checkout
+2026-03-03 15:55:59 INFO  tests.AllOneInTest - Performing login
+2026-03-03 15:55:59 INFO  tests.AllOneInTest - Adding item to cart
+2026-03-03 15:55:59 INFO  tests.AllOneInTest - Navigating to cart and checkout
